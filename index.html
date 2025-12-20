@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILUFUNG RODRICK - Full Stack Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="glass-header p-4 fixed w-full z-20 top-0 transition-all duration-300">
+        <div class="container mx-auto flex justify-center items-center">
+            <nav class="hidden md:flex space-x-8 text-white">
+                <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+                <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
+                <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
+                <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#home" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-gray-800 to-secondary-color text-white">
+        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
+            <div class="md:w-2/5 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold font-poppins mb-3">Ilufung Rodrick</h1>
+                <p class="text-xl md:text-2xl mt-2 font-light">I'm a <span id="hero-text" class="text-primary font-semibold"></span></p>
+                <p class="mt-4 text-lg text-gray-300 leading-relaxed">
+                    I'm a passionate Full Stack Developer with a love for creating beautiful and functional web applications. I specialize in building modern, responsive, and user-friendly interfaces.
+                </p>
+                <div class="mt-8 space-x-4">
+                    <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">View My Work</a>
+                    <button id="email-btn" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-secondary transition-all duration-300">Email Me</button>
+                </div>
+                <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-gitlab"></i></a>
+                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-apple"></i></a>
+                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="md:w-3/5 text-center md:text-left mb-10 md:mb-0 relative">
+                <img src="images/IMG_20250326_100732_174.jpg" alt="ILUFUNG RODRICK" class="w-2/3 h-auto rounded-lg mx-auto md:mx-0 shadow-lg relative z-10">
+                <div class="absolute top-0 left-0 w-full h-1/2 bg-primary/50 rounded-t-lg z-0"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold font-poppins">Technologies I Use</h2>
+                <p class="text-lg text-gray-500 mt-2">My favorite tools and technologies</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center reveal">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-react text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">React</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-node-js text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">Node.js</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-js-square text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">JavaScript</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-html5 text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">HTML5</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-css3-alt text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">CSS3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-python text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">Python</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fas fa-database text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">SQL</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <i class="fab fa-git-alt text-5xl text-primary"></i>
+                    <p class="mt-3 font-semibold font-poppins">Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold font-poppins">Featured Projects</h2>
+                <p class="text-lg text-gray-500 mt-2">A selection of my best work</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 reveal">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d1469c9b?q=80&w=2070&auto=format&fit=crop" alt="Project One" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Project One</h3>
+                        <p class="text-gray-600 mb-4">A full-featured e-commerce platform with a modern UI and a robust back-end.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Project Two" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Project Two</h3>
+                        <p class="text-gray-600 mb-4">A real-time collaborative task management application for teams.</p>
+                         <div class="mb-4">
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">TailwindCSS</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Project Three" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 font-poppins">Project Three</h3>
+                        <p class="text-gray-600 mb-4">A data visualization dashboard for analyzing large datasets.</p>
+                         <div class="mb-4">
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">D3.js</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-200">
+        <div class="container mx-auto px-6 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold font-poppins">Get In Touch</h2>
+                <p class="text-lg text-gray-500 mt-2">I'm open to new opportunities and collaborations.</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-10">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-gitlab"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-upwork"></i></a>
+                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 ILUFUNG RODRICK. Designed with <i class="fas fa-heart text-primary"></i>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
