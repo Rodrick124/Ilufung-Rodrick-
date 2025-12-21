@@ -4,36 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
 
-    // Typewriter effect
-    const heroText = document.getElementById('hero-text');
-    const roles = ['Full Stack Developer', 'React Specialist', 'Node.js Expert', 'Problem Solver'];
-    let roleIndex = 0, charIndex = 0, isDeleting = false;
-
-    function type() {
-        const currentRole = roles[roleIndex];
-        let typeSpeed = isDeleting ? 75 : 150;
-        
-        if (isDeleting) {
-            heroText.textContent = currentRole.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            heroText.textContent = currentRole.substring(0, charIndex + 1);
-            charIndex++;
-        }
-
-        if (!isDeleting && charIndex === currentRole.length) {
-            typeSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            roleIndex = (roleIndex + 1) % roles.length;
-            typeSpeed = 500;
-        }
-        
-        setTimeout(type, typeSpeed);
-    }
-    type();
-
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

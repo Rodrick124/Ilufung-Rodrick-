@@ -57,15 +57,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #06b6d4;
 }
 
-/* Typewriter blinker */
-#hero-text::after {
-    content: '|';
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
 /* Scroll Animations */
 .reveal {
     position: relative;
