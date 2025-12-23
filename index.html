@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Web Developer specializing in React, Node.js, and modern web applications.">
+    <meta property="og:title" content="ILUFUNG RODRICK - Full Stack Web Developer">
+    <meta property="og:description" content="Full Stack Web Developer specializing in React, Node.js, and modern web applications.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>ILUFUNG RODRICK - Full Stack Web Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,6 +27,7 @@
                 <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
                 <a href="#services" class="hover:text-primary transition-colors duration-300">Services</a>
                 <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
+                <a href="#faq" class="hover:text-primary transition-colors duration-300">FAQ</a>
             </nav>
             <div class="flex-grow"></div>
             <div class="flex items-center">
@@ -38,24 +44,25 @@
             <a href="#skills" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Skills</a>
             <a href="#services" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Services</a>
             <a href="#projects" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Projects</a>
+            <a href="#faq" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">FAQ</a>
             <a href="#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Contact</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center bg-white">
+    <section id="home" class="min-h-screen flex items-center">
         <!-- Spacing between text and image increased by adding p-10 -->
         <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-center md:gap-x-24 p-10">
             <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold font-poppins mb-3 text-gray-800">Build something that matters</h1>
-                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
-                    I'm a passionate Full Stack Developer with a love for creating beautiful and functional web applications. I specialize in building modern, responsive, and user-friendly interfaces.
+                <h1 class="text-4xl md:text-6xl font-bold font-poppins mb-3 text-gray-200">Build something that matters</h1>
+                <p class="mt-4 text-lg text-gray-400 leading-relaxed">
+                    I craft clean, functional web experiences that solve real problems. Let's talk about what you need built.
                 </p>
                 <div class="mt-8 space-x-4">
                     <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">View My Work</a>
-                    <button id="email-btn" class="bg-transparent border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-800 hover:text-white transition-all duration-300">Email Me</button>
+                    <button id="email-btn" class="bg-transparent border-2 border-gray-400 text-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all duration-300">Email Me</button>
                 </div>
-                <div class="mt-8 flex justify-center md:justify-start space-x-6 text-gray-700">
+                <div class="mt-8 flex justify-center md:justify-start space-x-6 text-gray-400">
                     <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
                     <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-gitlab"></i></a>
                     <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
@@ -69,129 +76,138 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="py-24 bg-slate-200">
+    <section id="skills" class="py-24 bg-black">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-4xl font-bold font-poppins">Technologies I Use</h2>
-                <p class="text-lg text-gray-500 mt-2">My favorite tools and technologies</p>
+                <p class="text-lg text-gray-400 mt-2">My favorite tools and technologies</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 reveal">
-                <div>
-                    <h3 class="text-2xl font-bold font-poppins text-center md:text-left mb-6">Frontend Technologies</h3>
-                    <div class="space-y-4">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">React</span>
-                                <span class="text-sm text-gray-500">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
-                            </div>
+            <div class="md:grid md:grid-cols-2 gap-12 items-start reveal">
+                <!-- Column 1: Scrolling Logos -->
+                <div class="logo-section">
+                    <!-- ===== ROW 1 (LEFT TO RIGHT) ===== -->
+                    <div class="logo-row">
+                        <div class="logo-track left-to-right">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="Heroku"
+                                class=" mx-auto mr-8">
+
+                            <!-- duplicate -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="Heroku"
+                                class=" mx-auto mr-8">
                         </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">JavaScript</span>
-                                <span class="text-sm text-gray-500">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">HTML5</span>
-                                <span class="text-sm text-gray-500">98%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">CSS3</span>
-                                <span class="text-sm text-gray-500">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">TailwindCSS</span>
-                                <span class="text-sm text-gray-500">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
+                    </div>
+
+                    <!-- ===== ROW 2 (RIGHT TO LEFT) ===== -->
+                    <div class="logo-row">
+                        <div class="logo-track right-to-left">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+                                class=" mx-auto mr-8">
+
+                            <!-- duplicate -->
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL" class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                                class=" mx-auto mr-8">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+                                class=" mx-auto mr-8">
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-2xl font-bold font-poppins text-center md:text-left mb-6">Backend & Other Technologies</h3>
-                    <div class="space-y-4">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">Node.js</span>
-                                <span class="text-sm text-gray-500">92%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">ExpressJS</span>
-                                <span class="text-sm text-gray-500">88%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">MongoDB</span>
-                                <span class="text-sm text-gray-500">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">Nodejs APIs</span>
-                                <span class="text-sm text-gray-500">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">SQL</span>
-                                <span class="text-sm text-gray-500">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">Git</span>
-                                <span class="text-sm text-gray-500">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="font-semibold font-poppins text-gray-700">Docker</span>
-                                <span class="text-sm text-gray-500">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-300 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
+
+                <!-- Column 2: Stack List -->
+                <div class="space-y-8 mt-12 md:mt-0">
+                    <div>
+                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Frontend Stack</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li>React.js (Hooks, Context API, Router)</li>
+                            <li>Tailwind CSS, Bootstrap, Responsive Design</li>
+                            <li>Modern Build Tools (Vite, Webpack)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Backend Stack</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>Node.js, Express.js</li>
+                            <li>RESTful API Development</li>
+                            <li>Authentication & Authorization (JWT, OAuth)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Databases & DevOps</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>MongoDB, PostgreSQL, SQL</li>
+                            <li>Git, GitHub, GitLab</li>
+                            <li>Docker, Basic Deployment (Heroku, Vercel)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -203,28 +219,28 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-4xl font-bold font-poppins">Services I Offer</h2>
-                <p class="text-lg text-gray-500 mt-2">What I can do for you</p>
+                <p class="text-lg text-gray-400 mt-2">What I can do for you</p>
             </div>
             <div class="grid md:grid-cols-3 gap-10 reveal">
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Web Development" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold font-poppins mb-3">Web Development</h3>
-                        <p class="text-gray-600">Creating responsive and dynamic websites from scratch, ensuring a seamless user experience across all devices.</p>
+                        <p class="text-gray-300">Creating responsive and dynamic websites from scratch, ensuring a seamless user experience across all devices.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop" alt="UI/UX Design" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold font-poppins mb-3">UI/UX Design</h3>
-                        <p class="text-gray-600">Designing intuitive and engaging user interfaces that are both beautiful and easy to use.</p>
+                        <p class="text-gray-300">Designing intuitive and engaging user interfaces that are both beautiful and easy to use.</p>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=2070&auto=format&fit=crop" alt="Backend Development" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold font-poppins mb-3">Backend Development</h3>
-                        <p class="text-gray-600">Building robust and scalable backend systems and APIs to power your applications.</p>
+                        <p class="text-gray-300">Building robust and scalable backend systems and APIs to power your applications.</p>
                     </div>
                 </div>
             </div>
@@ -236,47 +252,47 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 reveal">
                 <h2 class="text-4xl font-bold font-poppins">Featured Projects</h2>
-                <p class="text-lg text-gray-500 mt-2">A selection of my best work</p>
+                <p class="text-lg text-gray-400 mt-2">A selection of my best work</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 reveal">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                     <img src="https://images.unsplash.com/photo-1555066931-4365d1469c9b?q=80&w=2070&auto=format&fit=crop" alt="Project One" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-3 font-poppins">Project One</h3>
-                        <p class="text-gray-600 mb-4">A full-featured e-commerce platform with a modern UI and a robust back-end.</p>
+                        <p class="text-gray-300 mb-4">A full-featured e-commerce platform with a modern UI and a robust back-end.</p>
                         <div class="mb-4">
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">React</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Node.js</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
                         </div>
                         <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Project Two" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-3 font-poppins">Project Two</h3>
-                        <p class="text-gray-600 mb-4">A real-time collaborative task management application for teams.</p>
+                        <p class="text-gray-300 mb-4">A real-time collaborative task management application for teams.</p>
                          <div class="mb-4">
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Vue.js</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Firebase</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">TailwindCSS</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">TailwindCSS</span>
                         </div>
                         <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
                     <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Project Three" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-3 font-poppins">Project Three</h3>
-                        <p class="text-gray-600 mb-4">A data visualization dashboard for analyzing large datasets.</p>
+                        <p class="text-gray-300 mb-4">A data visualization dashboard for analyzing large datasets.</p>
                          <div class="mb-4">
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">D3.js</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
-                            <span class="inline-block bg-cyan-100 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">D3.js</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
                         </div>
                         <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
                     </div>
@@ -285,28 +301,89 @@
         </div>
     </section>
 
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold font-poppins">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-400 mt-2">Find answers to common questions about my services and work.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- FAQ Item 1 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-question-circle text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">What kind of projects do you take on?</h3>
+                    </div>
+                    <p class="text-gray-300">I specialize in full-stack web development, ranging from custom business applications to portfolio websites and e-commerce platforms.</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">Which technologies do you prefer?</h3>
+                    </div>
+                    <p class="text-gray-300">My core stack includes React, Node.js, Express.js, and MongoDB, but I'm always open to learning and working with new technologies.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-headset text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">How do you handle project communication?</h3>
+                    </div>
+                    <p class="text-gray-300">I prioritize clear and regular communication, usually through email, video calls, and project management tools to keep you updated every step of the way.</p>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hourglass-half text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">What is your typical project timeline?</h3>
+                    </div>
+                    <p class="text-gray-300">Timelines vary greatly depending on complexity and scope. After an initial consultation, I can provide a more accurate estimate for your specific project.</p>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-wallet text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">What are your rates?</h3>
+                    </div>
+                    <p class="text-gray-300">My rates are competitive and depend on the project's requirements. Please contact me for a detailed quote tailored to your needs.</p>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-primary text-3xl mr-4"></i>
+                        <h3 class="text-xl font-semibold font-poppins">Can you help with existing projects?</h3>
+                    </div>
+                    <p class="text-gray-300">Yes, I can provide support, maintenance, and feature development for existing web applications. Let's discuss your current needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-slate-200">
+    <section id="contact" class="py-24 bg-black">
         <div class="container mx-auto px-6 reveal">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold font-poppins">Get In Touch</h2>
-                <p class="text-lg text-gray-500 mt-2">I'm open to new opportunities and collaborations.</p>
+                <p class="text-lg text-gray-400 mt-2">I'm open to new opportunities and collaborations.</p>
             </div>
             <div class="max-w-2xl mx-auto">
-                <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                <form action="#" method="POST" class="bg-neutral-900 p-8 rounded-lg shadow-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
-                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            <label for="name" class="block text-gray-200 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
                         </div>
                         <div>
-                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            <label for="email" class="block text-gray-200 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
                         </div>
                     </div>
                     <div class="mb-6">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                        <label for="message" class="block text-gray-200 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">Send Message</button>
@@ -325,7 +402,7 @@
                 <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-upwork"></i></a>
                 <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p class="text-gray-400">&copy; 2025 ILUFUNG RODRICK. Designed with <i class="fas fa-heart text-primary"></i>.</p>
+            <p class="text-gray-500">&copy; 2025 ILUFUNG RODRICK. Designed with <i class="fas fa-heart text-primary"></i>.</p>
         </div>
     </footer>
 
