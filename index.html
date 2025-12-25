@@ -1,414 +1,960 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Stack Web Developer specializing in React, Node.js, and modern web applications.">
-    <meta property="og:title" content="ILUFUNG RODRICK - Full Stack Web Developer">
-    <meta property="og:description" content="Full Stack Web Developer specializing in React, Node.js, and modern web applications.">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>ILUFUNG RODRICK - Full Stack Web Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased">
 
-    <!-- Header -->
-    <header class="glass-header p-4 fixed w-full z-20 top-0 transition-all duration-300">
-        <div class="container mx-auto flex items-center">
-            <nav class="hidden md:flex space-x-8 text-white">
-                <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
-                <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
-                <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
-                <a href="#services" class="hover:text-primary transition-colors duration-300">Services</a>
-                <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
-                <a href="#faq" class="hover:text-primary transition-colors duration-300">FAQ</a>
-            </nav>
-            <div class="flex-grow"></div>
-            <div class="flex items-center">
-                <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md font-semibold hover-bg-primary transition-colors duration-300 hidden md:block">Contact</a>
-                <button id="mobile-menu-button" class="md:hidden text-2xl text-white ml-auto">
-                    <i class="fas fa-bars"></i>
-                </button>
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/20250323_175926(1).jpg" alt="ilufung Rodrick" width="40">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Om Kharche">Ilufung Rodrick</h1>
+
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4">
-            <a href="#home" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Home</a>
-            <a href="#about" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">About</a>
-            <a href="#skills" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Skills</a>
-            <a href="#services" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Services</a>
-            <a href="#projects" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Projects</a>
-            <a href="#faq" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">FAQ</a>
-            <a href="#contact" class="block py-2 px-4 text-sm text-white hover:bg-primary rounded">Contact</a>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center">
-        <!-- Spacing between text and image increased by adding p-10 -->
-        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-center md:gap-x-24 p-10">
-            <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold font-poppins mb-3 text-gray-200">Build something that matters</h1>
-                <p class="mt-4 text-lg text-gray-400 leading-relaxed">
-                    I craft clean, functional web experiences that solve real problems. Let's talk about what you need built.
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rodrickilufung@gmail.com" class="contact-link">rodrickilufung@gmail.com</a>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+237 683296892</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">26 June, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Douala, Cameroon</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Rodrick124" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- Blog 
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> 
+          -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A skilled and versatile Full-Stack Developer with 3+ years of experience in crafting innovative and user-centric web applications. 
+            Proficient in Front-End technologies (HTML5, CSS3, JavaScript, ReactJS, Bootstrap) and Back-End development (PHP, Node.js, Expressjs, MongoDB, MySQL). 
+            Passionate about creating intuitive user interfaces and seamless user experiences.
+            Proven ability to work independently and collaboratively within cross-functional teams.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
                 </p>
-                <div class="mt-8 space-x-4">
-                    <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">View My Work</a>
-                    <button id="email-btn" class="bg-transparent border-2 border-gray-400 text-gray-200 px-8 py-3 rounded-full font-semibold hover:bg-gray-700 hover:text-white transition-all duration-300">Email Me</button>
-                </div>
-                <div class="mt-8 flex justify-center md:justify-start space-x-6 text-gray-400">
-                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-gitlab"></i></a>
-                    <a href="#" class="text-3xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
-                </div>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-            <div id="hero-image" class="md:w-1/2 w-full h-96 md:h-auto md:min-h-screen bg-cover bg-center">
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
             </div>
+
+          </section>
+
         </div>
-    </section>
+
+
+        <!--
+          - clients
+        
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        -->
+
+      </article>
 
 
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-24 bg-black">
-        <div class="container mx-auto px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold font-poppins">Technologies I Use</h2>
-                <p class="text-lg text-gray-400 mt-2">My favorite tools and technologies</p>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-            <div class="md:grid md:grid-cols-2 gap-12 items-start reveal">
-                <!-- Column 1: Scrolling Logos -->
-                <div class="logo-section">
-                    <!-- ===== ROW 1 (LEFT TO RIGHT) ===== -->
-                    <div class="logo-row">
-                        <div class="logo-track left-to-right">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                                alt="TypeScript" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="Heroku"
-                                class=" mx-auto mr-8">
 
-                            <!-- duplicate -->
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                                alt="TypeScript" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="Heroku"
-                                class=" mx-auto mr-8">
-                        </div>
-                    </div>
+            <h3 class="h3">Education</h3>
+          </div>
 
-                    <!-- ===== ROW 2 (RIGHT TO LEFT) ===== -->
-                    <div class="logo-row">
-                        <div class="logo-track right-to-left">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt="JavaScript" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                                alt="PostgreSQL" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
-                                class=" mx-auto mr-8">
+          <ol class="timeline-list">
 
-                            <!-- duplicate -->
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt="JavaScript" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                                alt="PostgreSQL" class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
-                                class=" mx-auto mr-8">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
-                                class=" mx-auto mr-8">
-                        </div>
-                    </div>
-                </div>
+            <li class="timeline-item">
 
-                <!-- Column 2: Stack List -->
-                <div class="space-y-8 mt-12 md:mt-0">
-                    <div>
-                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Frontend Stack</h3>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
-                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
-                            <li>React.js (Hooks, Context API, Router)</li>
-                            <li>Tailwind CSS, Bootstrap, Responsive Design</li>
-                            <li>Modern Build Tools (Vite, Webpack)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Backend Stack</h3>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
-                            <li>Node.js, Express.js</li>
-                            <li>RESTful API Development</li>
-                            <li>Authentication & Authorization (JWT, OAuth)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold font-poppins mb-4 text-gray-200">Databases & DevOps</h3>
-                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
-                            <li>MongoDB, MySQL</li>
-                            <li>Git, GitHub, GitLab</li>
-                            <li>Docker, GitHub Actions , Yaml</li>
-                            <li>Figma, Adobe XD</li>
-                        </ul>
-                    </div>
-                </div>
+              <h4 class="h4 timeline-item-title">University Of Douala </h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">New york academy of</h4>
+
+              <span>2018 — 2024</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold font-poppins">Services I Offer</h2>
-                <p class="text-lg text-gray-400 mt-2">What I can do for you</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-10 reveal">
-                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Web Development" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold font-poppins mb-3">Web Development</h3>
-                        <p class="text-gray-300">Creating responsive and dynamic websites from scratch, ensuring a seamless user experience across all devices.</p>
-                    </div>
-                </div>
-                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop" alt="UI/UX Design" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold font-poppins mb-3">UI/UX Design</h3>
-                        <p class="text-gray-300">Designing intuitive and engaging user interfaces that are both beautiful and easy to use.</p>
-                    </div>
-                </div>
-                <div class="bg-neutral-900 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=2070&auto=format&fit=crop" alt="Backend Development" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold font-poppins mb-3">Backend Development</h3>
-                        <p class="text-gray-300">Building robust and scalable backend systems and APIs to power your applications.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h3 class="h3">Experience</h3>
+          </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-24">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold font-poppins">Featured Projects</h2>
-                <p class="text-lg text-gray-400 mt-2">A selection of my best work</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 reveal">
-                <!-- Project 1 -->
-                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="images/Screenshot from 2025-12-23 22-41-32.png" alt="Project One" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-3 font-poppins">AS Group</h3>
-                        <p class="text-gray-300 mb-4">A full multi-page website for a service provider company to showcase their services.</p>
-                        <div class="mb-4">
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">HTML</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CSS</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
-                        </div>
-                        <a href="https://as-group.onrender.com/" class="text-primary font-semibold hover:underline">View live site&rarr;</a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="images/Screenshot from 2025-12-23 22-54-23.png" alt="Project Two" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-3 font-poppins">Thesundayz</h3>
-                        <p class="text-gray-300 mb-4">An event ticket reservation website with integrated payment processing.</p>
-                         <div class="mb-4">
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">HTML</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">CSS</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Payment API</span>
-                        </div>
-                        <a href="https://thesundayz.com/" class="text-primary font-semibold hover:underline">View live site &rarr;</a>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Project Three" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-3 font-poppins">Project Three</h3>
-                        <p class="text-gray-300 mb-4">A data visualization dashboard for analyzing large datasets.</p>
-                         <div class="mb-4">
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">D3.js</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Python</span>
-                            <span class="inline-block bg-cyan-900 text-cyan-200 text-xs font-semibold px-2.5 py-0.5 rounded-full">Flask</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:underline">View Details &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Full-Stack Developer</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-24 bg-black">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-4xl font-bold font-poppins">Frequently Asked Questions</h2>
-                <p class="text-lg text-gray-400 mt-2">Find answers to common questions about my services and work.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
-                <!-- FAQ Item 1 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-question-circle text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">What kind of projects do you take on?</h3>
-                    </div>
-                    <p class="text-gray-300">I specialize in full-stack web development, ranging from custom business applications to portfolio websites and e-commerce platforms.</p>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-code text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">Which technologies do you prefer?</h3>
-                    </div>
-                    <p class="text-gray-300">My core stack includes React, Node.js, Express.js, and MongoDB, but I'm always open to learning and working with new technologies.</p>
-                </div>
-                <!-- FAQ Item 3 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-headset text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">How do you handle project communication?</h3>
-                    </div>
-                    <p class="text-gray-300">I prioritize clear and regular communication, usually through email, video calls, and project management tools to keep you updated every step of the way.</p>
-                </div>
-                <!-- FAQ Item 4 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-hourglass-half text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">What is your typical project timeline?</h3>
-                    </div>
-                    <p class="text-gray-300">Timelines vary greatly depending on complexity and scope. After an initial consultation, I can provide a more accurate estimate for your specific project.</p>
-                </div>
-                <!-- FAQ Item 5 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-wallet text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">What are your rates?</h3>
-                    </div>
-                    <p class="text-gray-300">My rates are competitive and depend on the project's requirements. Please contact me for a detailed quote tailored to your needs.</p>
-                </div>
-                <!-- FAQ Item 6 -->
-                <div class="bg-neutral-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-lightbulb text-primary text-3xl mr-4"></i>
-                        <h3 class="text-xl font-semibold font-poppins">Can you help with existing projects?</h3>
-                    </div>
-                    <p class="text-gray-300">Yes, I can provide support, maintenance, and feature development for existing web applications. Let's discuss your current needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-black">
-        <div class="container mx-auto px-6 reveal">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold font-poppins">Get In Touch</h2>
-                <p class="text-lg text-gray-400 mt-2">I'm open to new opportunities and collaborations.</p>
-            </div>
-            <div class="max-w-2xl mx-auto">
-                <form action="#" method="POST" class="bg-neutral-900 p-8 rounded-lg shadow-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-gray-200 font-semibold mb-2">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-200 font-semibold mb-2">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
-                        </div>
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-gray-200 font-semibold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover-bg-primary transform hover:scale-105 transition-all duration-300 shadow-lg">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-secondary text-white py-10">
-        <div class="container mx-auto text-center">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-gitlab"></i></a>
-                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-upwork"></i></a>
-                <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p class="text-gray-500">&copy; 2025 ILUFUNG RODRICK. Designed with <i class="fas fa-heart text-primary"></i>.</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://as-group.onrender.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project/Screenshot from 2025-12-23 22-41-32.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AS Group</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://thesundayz.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project/Screenshot from 2025-12-23 22-54-23.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Thesundayz</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Event Marketplace</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
