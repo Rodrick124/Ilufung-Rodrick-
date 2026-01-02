@@ -1375,6 +1375,32 @@ textarea.form-input::-webkit-resizer {
 }
 
 
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.tech-list div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-list div ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
 
 
 
