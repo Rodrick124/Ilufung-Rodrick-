@@ -157,3 +157,21 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+form.addEventListener('submit', function(event) {
+   event.preventDefault();
+
+  formBtn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_xvq32fo';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        formBtn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      formBtn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
